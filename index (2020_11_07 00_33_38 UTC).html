@@ -1,0 +1,492 @@
+ <!DOCTYPE html>
+ <html>
+	<header>
+		<title>GRL - Página Oficial</title>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	</header>
+ 
+	<body>
+		<style type="text/css">
+		
+			.button {
+			  background-color: #4CAF50; /* Green */
+			  border: none;
+			  color: white;
+			  padding: 16px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 12px;
+			  margin: 4px 2px;
+			  transition-duration: 0.4s;
+			  cursor: pointer;
+			}
+		
+			a{
+				text-decoration:none;
+			}
+			
+			ul{
+				list-style-type:none;
+			}
+		
+			/* Body */
+				body{
+					width:90%
+					text-align:center;
+					margin:0 auto;
+					
+				}
+				
+			/* Loader */
+			
+			div.loader{
+				position: fixed;
+				z-index: 99;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgb(0,0,0);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			div.loader > img{
+				width: 200px;
+			}
+			
+			div.loader.hidden{
+				animation: fadeOut 2s;
+				animation-fill-mode: forwards;
+			}
+			
+			@keyframes fadeOut{
+				100%{
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+				
+			/* Header */
+			
+				#header{
+					overflow:auto;
+					/* background-color: rgb(54,54,54); */
+					background-image: url("images/main/fundo.jpg");
+					margin: 0 auto;
+					width: 100%;
+				}
+				/* div.primeira_parte{ */
+				/*	overflow: auto; */
+				/*	width:50%; */
+				/*	float:left; */
+				/*	margin:1% */
+				/*	text-align:center; */
+				/* } */
+				
+				#nav{
+					padding-top:5px;
+				}
+				
+				a.primeiros_topicos{
+					margin:5px;
+				}
+				
+				.button_primeiros_topicos{
+					background-color: rgb(54,54,54); 
+					color: rgb(181,181,181); 
+					border: 2px solid rgb(54,54,54);
+					border-radius:30px;
+				}
+				
+				.button_primeiros_topicos:hover {
+					background-color: rgb(105,105,105);
+					color: white;
+				}
+				
+				#logo_header{
+				
+				}
+				
+				#separacao_primeira_parte{
+					width: 70%;
+					border: 0.5px solid rgb(181,181,181,0.3);
+					border-radius: 5px;
+				}
+				
+			/* Content */
+				#content{
+					text-align:center;
+					color: rgb(250,250,250);
+					overflow: auto;
+					background-color:rgb(250,250,250);
+				}
+				
+				/* Personal Informations */				
+				img.fotos_perfil{
+					border-style: solid;
+					border-radius: 100px;
+				}
+				
+				#personal_if{
+					overflow: auto;
+					border-style:solid;
+					border-radius:30px;
+					margin:5px;
+					background-color:rgb(0,0,0);
+					padding-bottom:20px;
+				}
+				
+				
+				/* Office */
+				#sala{
+					background-image: url("images/main/escritorio.jpg");
+					padding: 5px;
+					border-style:solid;
+					border-radius:30px;
+					margin:5px;
+					transition-duration:1s;
+				}
+				
+				#history_of_office{
+					text-align: left;
+				}
+				
+				/* Useful links */
+				div.linha_link{
+					text-align:center;
+					overflow: auto;
+					background-color:rgb(181,181,181);
+					color:rgb(0,0,0);
+					border-style:solid;
+					border-radius:30px;
+					border-color:rgb(250,250,250);
+					margin:5px;
+					padding-top:50px;
+				}
+				
+				img.sites_justiça{
+					border-style:solid;
+					border-radius:80px;
+				}
+				
+				#mais_links{
+					width:95%;
+					text-align: right;
+				}
+				
+				
+			/* Footer */
+				footer{
+					overflow: auto;
+					/* border-style:solid; */
+					/* border-color:rgb(250,250,250); */
+					/* border-radius:30px; */
+					margin:5px;
+					/* background-color:rgb(207,207,207); */
+					background-image: url("images/main/fundo_footer.jpg");
+				}
+				
+				div.linha{
+					text-align:center;
+				}
+				div.coluna{
+					overflow: auto;
+					width:31.3%;
+					float:left;
+					margin:1%
+				}
+				
+				
+				img.icones{
+					border-style:solid;
+					border-radius:30px;
+					border-color:rgb(0,0,0);
+					
+				}
+				
+				#end_um{
+					overflow:auto;
+				}
+				
+				#end_dois{
+					padding-top:0px;
+					padding-left:15px;
+				}
+				
+				hr.fot{
+					border-top:1px solid black;
+					border-radius:1px;
+					width:90%;
+				}
+				
+			/* Slider */
+			
+				#sliderbox{
+					position: relative;
+					width: 9000px;
+					animation-name: slideranimation;
+					animation-duration: 20s;
+					animation-iteration-count: infinite;
+					
+				}
+				
+				#sliderbox img{
+					width: 1200px;
+					margin: 20px;
+					float: left;
+					text-align: center;
+				}
+				
+				#slider{
+					overflow: hidden;
+					width: 1240px;
+				}
+				
+				
+				
+				@keyframes slideranimation{
+					0%{
+						left: 0px;
+					}
+					20%{
+						left: 0px;
+					}
+					25%{
+						left: -1240px;
+					}
+					45%{
+						left: -1240px;
+					}
+					50%{
+						left: -2460px;
+					}
+					75%{
+						left: -2460px;
+					
+					}
+					80%{
+						left: -3680px;
+					}
+				}
+				
+				
+		</style>
+		<div id="page">
+		
+			<!-- Loader -->
+			<div class="loader">
+				<img src="images/main/loading.gif" alt="Loading..." />
+			</div>
+			<!-- Header -->
+			<div id="header" class="linha">
+				<div class="primeira_parte">
+					<img id="logo_header" src="images/main/ideia_logo_escritorio_png.png" alt="logo" title="logo" />
+				</div>
+				
+				<hr id="separacao_primeira_parte" />
+				
+				<div id="nav" class="primeira_parte">
+					<button class="button button_primeiros_topicos"><a href="https://www.google.com/" style="color: rgb(181,181,181)" class="primeiros_topicos">ESCRITÓRIO E EQUIPE</a></button>
+					<button class="button button_primeiros_topicos"><a href="https://www.facebook.com/" style="color: rgb(181,181,181)" class="primeiros_topicos">CONCILIAÇÃO, MEDIAÇÃO E ACORDOS</a></button>
+					<button class="button button_primeiros_topicos"><a href="https://www.nature.com/" style="color: rgb(181,181,181)" class="primeiros_topicos">PARA VOCÊ</a></button>
+					<button class="button button_primeiros_topicos"><a href="https://www.scientificamerican.com/" style="color: rgb(181,181,181)" class="primeiros_topicos">PARA SUA EMPRESA</a></button>
+					<button class="button button_primeiros_topicos"><a href="https://www.scientificamerican.com/" style="color: rgb(181,181,181)" class="primeiros_topicos">PARA ADVOGADOS</a></button>
+					<button class="button button_primeiros_topicos"><a href="https://www.scientificamerican.com/" style="color: rgb(181,181,181)" class="primeiros_topicos">LINKS EXTERNOS</a></button>
+				</div>
+			</div>
+			
+			
+			<!-- Content -->
+			<div id="content" class="linha">
+				<p>Conteudo</p>
+				
+				<!-- Slider -->
+				<div id="slider">
+					<div id="sliderbox">
+						<img src="images/main/ret_red.png" class="slider" />
+						<img src="images/main/ret_red_blue.png" class="slider" />
+						<img src="images/main/ret_red_green.png" class="slider" />
+						<img src="images/main/ret_red_roxo.png" class="slider" />
+						
+					</div>
+				</div>
+				
+				
+				<!-- Office history -->
+				<div id="sala" data-aos="fade-up">
+					<h1>Informações sobre o escritório</h1>
+					<p id="history_of_office">The earliest people who could be described as "lawyers" were probably the orators of ancient Athens (see History of Athens). However, Athenian orators faced serious structural obstacles.
+					First, there was a rule that individuals were supposed to plead their own cases, which was soon bypassed by the increasing tendency of individuals to ask a "friend" for assistance.
+					However, around the middle of the fourth century, the Athenians disposed of the perfunctory request for a friend.
+					Second, a more serious obstacle, which the Athenian orators never completely overcame, was the rule that no one could take a fee to plead the cause of another.
+					This law was widely disregarded in practice, but was never abolished, which meant that orators could never present themselves as legal professionals or experts.
+					They had to uphold the legal fiction that they were merely an ordinary citizen generously helping out a friend for free, and thus they could never organize into a real profession—with professional
+					associations and titles and all the other pomp and circumstance—like their modern counterparts.Therefore, if one narrows the definition to those men who could practice the legal profession openly and legally,
+					then the first lawyers would have to be the orators of ancient Rome.
+					The ban on fees was abolished by Emperor Claudius, who legalized advocacy as a profession and allowed the Roman advocates to become the first lawyers who could practice openly—but he also imposed a fee ceiling of 10,000 sesterces.
+					This was apparently not much money; the Satires of Juvenal complain that there was no money in working as an advocate.
+					Like their Greek contemporaries, early Roman advocates were trained in rhetoric, not law, and the judges before whom they argued were also not law-trained.
+					But very early on, unlike Athens, Rome developed a class of specialists who were learned in the law, known as jurisconsults (iuris consulti).
+					Jurisconsults were wealthy amateurs who dabbled in law as an intellectual hobby. Advocates and ordinary people also went to jurisconsults for legal opinions.
+					Thus, the Romans were the first to have a class of people who spent their days thinking about legal problems, and this is why their law became so "precise, detailed, and technical."
+					During the Roman Republic and the early Roman Empire, jurisconsults and advocates were unregulated, since the former were amateurs and the latter were technically illegal.
+					Any citizen could call himself an advocate or a legal expert, though whether people believed him would depend upon his personal reputation. This changed once Claudius legalized the legal profession.
+					By the start of the Byzantine Empire, the legal profession had become well-established, heavily regulated, and highly stratified.The centralization and bureaucratization of the profession was apparently gradual at first,
+					but accelerated during the reign of Emperor Hadrian.At the same time, the jurisconsults went into decline during the imperial period.</p>
+				</div>
+				
+				
+				<!-- Personal informations -->
+				<div id="personal_if" data-aos="fade-up">
+					<h1>Informações pessoais</h1>
+					<div class="linha">
+						<div class="coluna">
+							<p>Foto 1</p>
+							<img id="einstein" src="images/main/einstein.png" alt="einstein" title="einstein" class="fotos_perfil" />
+							<figcaption>
+								Prof.Dr.Albert Einstein
+							</figcaption>
+							<a href="https://www.google.com/" style="color: rgb(250,250,250)">Saiba mais</a>
+						</div>
+						<div class="coluna">
+							<p>Foto 2</p>
+							<img id="da_vinci" src="images/main/da_vinci.png" alt="da_vinci" title="da_vinci" class="fotos_perfil" />
+							<figcaption>
+								God among Humans
+							</figcaption>
+							<a href="https://www.google.com/" style="color: rgb(250,250,250)">Saiba mais</a>
+						</div>
+						<div class="coluna">
+							<p>Foto 3</p>
+							<img id="gauss" src="images/main/gauss.png" alt="gauss" title="gauss" class="fotos_perfil" />
+							<figcaption>
+								Prof.Dr.Friederich Gauss
+							</figcaption>
+							<a href="https://www.google.com/" style="color: rgb(250,250,250)">Saiba mais</a>
+						</div>
+					</div>
+				</div>
+				
+				
+				<!-- Useful links -->
+				<div id="links_uteis" data-aos="fade-up">
+					<div class="linha_link">
+						<div class="coluna">
+							<img src="images/main/tjmg.png" alt="tjmg" title="tjmg" class="sites_justiça">
+							<figcaption>Tribunal de Justiça de Minas Gerais</figcaption>
+							<a href="https://www.google.com/">Ir para o site</a>
+						</div>
+						<div class="coluna">
+							<img src="images/main/trf1.png" alt="trf1" title="trf1" class="sites_justiça">
+							<figcaption>Tribunal Regional Federal 1</figcaption>
+							<a href="https://www.google.com/">Ir para o site</a>
+						</div>
+						<div class="coluna">
+							<img src="images/main/trt3.png" alt="trt3" title="trt3" class="sites_justiça">
+							<figcaption>Tribunal Regional do Trabalho 3</figcaption>
+							<a href="https://www.google.com/">Ir para o site</a>
+						</div>
+						
+						<br />
+						
+						<div class="coluna">
+							<img src="images/main/stj.png" alt="stj" title="stj" class="sites_justiça">
+							<figcaption>Superior Tribunal de Justiça</figcaption>
+							<a href="https://www.google.com/">Ir para o site</a>
+						</div>
+						<div class="coluna">
+							<img src="images/main/stf.png" alt="stf" title="stf" class="sites_justiça">
+							<figcaption>Supremo Tribunal Federal</figcaption>
+							<a href="https://www.google.com/">Ir para o site</a>
+						</div>
+						<div class="coluna">
+							<img src="images/main/tst.png" alt="tst" title="tst" class="sites_justiça">
+							<figcaption>Tribunal Superior do Trabalho</figcaption>
+							<a href="https://www.google.com/">Ir para o site</a>
+						</div>
+						
+						<br />
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						
+						<p id="mais_links"><a href="https://www.google.com/" style="color:rgb(0,0,0)"> + Mais links</a></p>
+					</div>
+				</div>
+				
+			</div>
+			
+			<!-- Footer -->
+			<footer id="end">
+				<div id="end_um" data-aos="fade-up">
+					<div class="linha">
+						<div class="coluna">
+							<h4>MENU</h4>
+						</div>
+						
+						<div class="coluna">
+							<h4>ENDEREÇO</h4>
+						</div>
+						
+						<div class="coluna">
+							<h4>ONLINE</h4>
+						</div>
+					</div>
+					
+					<hr class="fot" />
+					
+					<div class="linha">
+						<div class="coluna">
+							
+							<p style="padding-left:60px" align="left"><a href="https://www.google.com/" style="color: rgb(0,0,0)">ESCRITÓRIO E EQUIPE</a></p>
+							<p style="padding-left:60px" align="left"><a href="https://www.facebook.com/" style="color: rgb(0,0,0)">CONCILIAÇÃO, MEDIAÇÃO E ACORDOS</a></p>
+							<p style="padding-left:60px" align="left"><a href="https://www.nature.com/" style="color: rgb(0,0,0)">PARA VOCÊ</a></p>
+							<p style="padding-left:60px" align="left"><a href="https://www.scientificamerican.com/" style="color: rgb(0,0,0)">PARA SUA EMPRESA</a></p>
+							<p style="padding-left:60px" align="left"><a href="https://www.scientificamerican.com/" style="color: rgb(0,0,0)">PARA ADVOGADOS</a></p>
+							<p style="padding-left:60px" align="left"><a href="https://www.scientificamerican.com/" style="color: rgb(0,0,0)">LINKS EXTERNOS</a></p>
+							
+						</div>
+						
+						<div class="coluna">
+							<iframe 
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.0404454590266!2d-43.942935385555046!3d-19.92270038660782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699e3b6414593%3A0xcde2624afb4aa1a7!2sR.%20S%C3%A3o%20Paulo%2C%201031%20-%20Centro%2C%20Belo%20Horizonte%20-%20MG%2C%2030170-133!5e0!3m2!1sen!2sbr!4v1579902461513!5m2!1sen!2sbr"
+								width="400"
+								height="250"
+								frameborder="0"
+								style="border-style:solid; border-radius:20px; border-color:rgb(0,0,0,0); border-width:5px"
+								allowfullscreen="">
+							</iframe>
+						</div>
+						
+						<div class="coluna">
+							<a href="https://www.facebook.com/"><img src="images/main/facebook.png" class="icones" alt="Facebook" title="Facebook" /></a>
+							<a href="https://www.google.com/"><img src="images/main/instagram.png" class="icones" alt="Instagram" title="Instagram" /></a>
+							<a href="https://www.google.com/"><img src="images/main/twitter.png" class="icones" alt="Twitter" title="Twitter" /></a>
+							<a href="https://www.google.com/"><img src="images/main/youtube.png" class="icones" alt="You Tube" title="You Tube" /></a>
+						</div>
+					</div>
+				</div>
+				<hr class="fot" />
+				<div id="end_dois">
+					<p>&copy; Copyright 2020</p>
+				</div>
+			</footer>
+		</div>
+		<script>
+			AOS.init({
+				duration: 2200,
+			});
+		</script>
+		
+		<script type="text/javascript">
+			window.addEventListener("load", function(){
+				const loader = document.querySelector(".loader");
+				loader.className += " hidden";
+			});
+		</script>
+	</body>
+ </html>

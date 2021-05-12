@@ -1,0 +1,308 @@
+.button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.button_footer {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+a{
+	text-decoration:none;
+}
+
+ul{
+	list-style-type:none;
+}
+
+h1,h2,h3,h4,a,p,figcaption,ul,li,input{
+	font-family: 'Ovo', serif;
+}
+
+h1,h2{
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Body */
+body{
+	background-color:rgb(255,250,250,0);
+	width:90%
+	text-align:center;
+	margin:0 auto;
+	overflow:auto;
+}
+
+/* Loader */
+div.loader{
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(0,0,0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.loader > img{
+	width: 200px;
+}
+
+div.loader.hidden{
+	animation: fadeOut 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+	
+/* Header */
+#header{
+	overflow:auto;
+	background-image: url("images/main/fundo.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	margin: 0 auto;
+	width: 100%;
+}
+	
+#nav{
+	padding-top:5px;
+}
+
+a.primeiros_topicos{
+	margin:5px;
+	}
+	
+.button_primeiros_topicos{
+	background-color: rgb(54,54,54,0); 
+	color: rgb(181,181,181); 
+	border: 2px solid rgb(54,54,54,0);
+	border-radius:30px;
+}
+
+.button_primeiros_topicos:hover {
+	background-color: rgb(105,105,105);
+	color: white;
+}
+
+#logo_header{
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+#separacao_primeira_parte{
+	width: 70%;
+	border: 0.5px solid rgb(181,181,181,0.3);
+	border-radius: 5px;
+}
+
+/* Content */
+#content{
+	text-align:center;
+	color: rgb(0,0,0);
+	overflow: auto;
+	background-color:rgb(255,250,250,0);
+}
+
+/* Personal Informations */				
+img.fotos_perfil{
+	border-style: solid;
+	border-radius: 100px;
+}
+
+#personal_if{
+	overflow: auto;
+	border-style:solid;
+	border-radius:30px;
+	margin:5px;
+	background-color:rgb(0,0,0);
+	padding-bottom:20px;
+}
+
+/* Office */
+#sala{
+	background-image: url("images/main/logo_escritorio_com_fundo_background_dois.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	padding: 5px;
+	-webkit-border-radius: 5000px;
+	-moz-border-radius: 5000px;
+	border-radius: 5000px;
+	border-style:solid;
+	border-color:rgb(255,250,250,0);
+	margin:5px;
+	transition-duration:1s;
+}
+
+#history_of_office{
+	quotes:'‘' '’';
+	text-align:center;
+}
+
+/* Useful links */
+div.linha_link{
+	text-align:center;
+	overflow: auto;
+	background-color:rgb(181,181,181);
+	color:rgb(0,0,0);
+	border-style:solid;
+	border-radius:30px;
+	border-color:rgb(250,250,250);
+	margin:5px;
+	padding-top:50px;
+}
+
+img.sites_justiça{
+	border-style:solid;
+	border-radius:80px;
+}
+
+#mais_links{
+	width:95%;
+	text-align: right;
+}
+
+hr.conteudo{
+	border-top:1px solid rgb(200,200,200);
+	border-radius:1px;
+	width:90%;
+}
+
+/* Footer */
+	footer{
+	overflow: auto;
+	margin:5px;
+	background-image: url("images/main/fundo_footer.jpg");
+	text-align:center;
+}
+
+div.linha{
+	text-align:center;
+}
+
+div.coluna{
+	overflow: auto;
+	width:31.3%;
+	float:left;
+	margin:1%
+}
+
+img.icones{
+	border-style:solid;
+	border-radius:30px;
+	border-color:rgb(0,0,0);	
+}
+
+#end_um{
+	overflow:auto;
+}
+
+#end_dois{
+	padding-top:0px;
+	padding-left:15px;
+}
+
+hr.fot{
+	border-top:1px solid rgb(200,200,200);
+	border-radius:1px;
+	width:70%;
+}
+
+hr.fot_dois{
+	border:1px solid rgb(130,130,130);
+	border-top:1px solid rgb(180,180,180);
+	border-radius:1px;
+	width:70%;
+}
+
+.button_footer_topicos{
+	background-color: rgb(54,54,54,0); 
+	color: rgb(181,181,181); 
+	border: 2px solid rgb(54,54,54,0);
+	border-radius:30px;
+}
+
+.button_footer_topicos:hover {
+	background-color: rgb(185,185,185);
+	color: white;
+}
+
+#qrcode{
+	width:150px;
+	height:150px;
+	border-style:solid;
+	border-radius:10px;
+	border-color:rgb(250,250,250,0);
+}
+	
+/* Slider */
+#sliderbox{
+	position: relative;
+	width: 9000px;
+	animation-name: slideranimation;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+#sliderbox img{
+	width: 1200px;
+	margin: 20px;
+	float: left;
+	text-align: center;
+}
+
+#slider{
+	overflow: hidden;
+	width: 1240px;
+}
+
+@keyframes slideranimation{
+	0%{
+		left: 0px;
+	}
+	20%{
+		left: 0px;
+	}
+	25%{
+		left: -1240px;
+	}
+	45%{
+		left: -1240px;
+	}
+	50%{
+		left: -2460px;
+	}
+	75%{
+		left: -2460px;
+	}
+	80%{
+		left: -3680px;
+	}
+}

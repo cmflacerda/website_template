@@ -1,0 +1,432 @@
+ <!DOCTYPE html>
+ <html>
+	<header>
+		<title>GRL - Página Oficial</title>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ovo&display=swap" rel="stylesheet">
+		<link href="first_css.css" type="text/css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</header>
+ 
+	<body>
+		<style type="text/css">
+
+			#sub_logo{
+				overflow: auto;
+				width:20%;
+				float:left;
+				margin:1%
+				border-style: solid;
+				border-color:white;
+			}
+			
+			
+			
+			#topicos_head{
+				overflow: auto;
+				width:80%;
+				float:left;
+				margin:1%
+				text-align:left;
+				padding-top:25px;
+				
+			}
+			
+			.button_escritorio_equipe {
+				background-color: #4CAF50; /* Green */
+				border: none;
+				color: white;
+				padding: 8px 16px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 12px;
+				margin: 4px 2px;
+				transition-duration: 0.4s;
+				cursor: pointer;
+			}
+			
+			.button_primeiros_topicos{
+				background-color: rgb(54,54,54,0); 
+				color: rgb(181,181,181); 
+				border: 2px solid rgb(54,54,54,0);
+				border-radius:30px;
+			}
+
+			.button_primeiros_topicos:hover {
+				background-color: rgb(105,105,105);
+				color: white;
+			}
+			
+			.equipe{
+				text-align:left;
+				overflow:auto;
+			}
+			
+			.pagina_equipe{
+				width:300px;
+				height:380px;
+				float:left;
+				border-style:solid;
+				border-radius:10px;
+				border-color:rgb(0,0,0);
+				box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2), 2px 6px 20px 2px rgba(0, 0, 0, 0.19);
+			}
+			
+			.coluna{
+				width:50%;
+				align:right;
+			}
+			
+			 /* Style the tab */
+			.tab {
+				padding-left:38.9%;
+				overflow: hidden;
+				border: 1px solid rgb(0,0,0,0);
+				background-color: rgb(0,0,0,0);
+			}
+
+			/* Style the buttons that are used to open the tab content */
+			.tab button {
+				background-color: inherit;
+				border-radius:30px;
+				float: left;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				padding: 8px 16px;
+				font-size: 16px;
+				margin: 4px 2px;
+				transition: 0.4s;
+				font-family: 'Ovo', serif;
+			}
+
+			/* Change background color of buttons on hover */
+			.tab button:hover {
+				background-color: rgb(205,205,205);
+			}
+
+			/* Create an active/current tablink class */
+			.tab button.active {
+				background-color: #ccc;
+			}
+
+			/* Style the tab content */
+			.tabcontent {
+				font-family: 'Ovo', serif;
+				display: none;
+				padding: 6px 12px;
+				border: 1px solid rgb(0,0,0,0);
+				border-top: none;
+			}
+			
+			#escritorio{
+				background-image:url("images/escritorio.jpg");
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				overflow:auto;
+				object-fit:cover;
+			}
+			
+		</style>
+		<div id="page">
+		
+			<!-- Loader -->
+			<div class="loader">
+				<img src="images/main/loading.gif" alt="Loading..." />
+			</div>
+			<!-- Header -->
+			<div id="header" class="linha">
+			
+				<div id="sub_logo">
+					<a href="index_um.html"><img id="logo_header" src="images/main/logo_final_escritorio_equipe.png" alt="logo" title="logo" /></a>
+				</div>
+				
+				<div id="topicos_head">
+					<button class="button_escritorio_equipe button_primeiros_topicos"><a href="escritorio_e_equipe.html" style="color: rgb(181,181,181)" class="primeiros_topicos">ESCRITÓRIO E EQUIPE</a></button>
+					<button class="button_escritorio_equipe button_primeiros_topicos"><a href="conciliacao_mediacao_e_acordos.html" style="color: rgb(181,181,181)" class="primeiros_topicos">CONCILIAÇÃO, MEDIAÇÃO E ACORDOS</a></button>
+					<button class="button_escritorio_equipe button_primeiros_topicos"><a href="para_voce.html" style="color: rgb(181,181,181)" class="primeiros_topicos">PARA VOCÊ</a></button>
+					<button class="button_escritorio_equipe button_primeiros_topicos"><a href="para_sua_empresa.html" style="color: rgb(181,181,181)" class="primeiros_topicos">PARA SUA EMPRESA</a></button>
+					<button class="button_escritorio_equipe button_primeiros_topicos"><a href="para_advogados.html" style="color: rgb(181,181,181)" class="primeiros_topicos">PARA ADVOGADOS</a></button>
+					<button class="button_escritorio_equipe button_primeiros_topicos"><a href="sac.html" style="color: rgb(181,181,181)" class="primeiros_topicos">SAC</a></button>
+				</div>
+			</div>
+			
+			
+			<!-- Content -->
+			<div id="content" class="linha">
+				
+				<!-- Office history, Personal informations, Useful links  -->
+				<div id="sala">
+					
+					<h1>EQUIPE</h1>
+					<br>
+					<p>&nbsp;</p>
+					
+					<div class="equipe">
+
+						<p><a id="socio_um"><img id="einstein" src="images/main/einstein.png" alt="einstein" title="einstein" class="pagina_equipe" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prof.Dr.Albert Einstein<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Lattes:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Instagram:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span style="font-style:italic; text-align:center">"A mind that opens to new ideas will never return to its last size."</span></p>
+						
+						
+					</div>
+					
+					<br>
+					
+					<h2>MAIS INFORMAÇÕES</h2>
+					<br>
+					
+					 <!-- Tab links -->
+					<div class="tab">
+						<button class="tablinks" onclick="openCity(event, 'Mensagem')">Mensagem</button>
+						<button class="tablinks" onclick="openCity(event, 'Palestras')">Palestras</button>
+						<button class="tablinks" onclick="openCity(event, 'Aulas')">Aulas</button>
+					</div>
+
+					<!-- Tab content -->
+					<div id="Mensagem" class="tabcontent">
+						<h3>London</h3>
+						<p>London is the capital city of England.</p>
+					</div>
+
+					<div id="Palestras" class="tabcontent">
+						<h3>Paris</h3>
+						<p>Paris is the capital of France.</p>
+					</div>
+
+					<div id="Aulas" class="tabcontent">
+						<h3>Tokyo</h3>
+						<p>Tokyo is the capital of Japan.</p>
+					</div>
+					
+					<p>&nbsp;</p>
+					
+
+					<hr class="conteudo" />
+					<br>
+					
+					<div class="equipe">
+
+						<p><a id="socio_dois"><img id="da_vinci" src="images/main/da_vinci.png" alt="da_vinci" title="da_vinci" class="pagina_equipe" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prof.Dr.Albert Einstein<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Lattes:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Instagram:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span style="font-style:italic; text-align:center">"A mind that opens to new ideas will never return to its last size."</span></p>
+						
+						
+					</div>
+					
+					<br>
+					
+					<h2>MAIS INFORMAÇÕES</h2>
+					<br>
+					
+					 <!-- Tab links -->
+					<div class="tab">
+						<button class="tablinks" onclick="openCity(event, 'Mensagem_um')">Mensagem</button>
+						<button class="tablinks" onclick="openCity(event, 'Palestras_um')">Palestras</button>
+						<button class="tablinks" onclick="openCity(event, 'Aulas_um')">Aulas</button>
+					</div>
+
+					<!-- Tab content -->
+					<div id="Mensagem_um" class="tabcontent">
+						<h3>London</h3>
+						<p>London is the capital city of England.</p>
+					</div>
+
+					<div id="Palestras_um" class="tabcontent">
+						<h3>Paris</h3>
+						<p>Paris is the capital of France.</p>
+					</div>
+
+					<div id="Aulas_um" class="tabcontent">
+						<h3>Tokyo</h3>
+						<p>Tokyo is the capital of Japan.</p>
+					</div>
+					
+					<p>&nbsp;</p>
+					
+
+					<hr class="conteudo" />
+					<br>
+					
+					<div class="equipe">
+
+						<p><a id="socio_tres"><img id="gauss" src="images/main/gauss.png" alt="gauss" title="gauss" class="pagina_equipe" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prof.Dr.Albert Einstein<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Lattes:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Instagram:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span style="font-style:italic; text-align:center">"A mind that opens to new ideas will never return to its last size."</span></p>
+						
+						
+					</div>
+					
+					<br>
+					
+					<h2>MAIS INFORMAÇÕES</h2>
+					<br>
+					
+					 <!-- Tab links -->
+					<div class="tab">
+						<button class="tablinks" onclick="openCity(event, 'Mensagem_dois')">Mensagem</button>
+						<button class="tablinks" onclick="openCity(event, 'Palestras_dois')">Palestras</button>
+						<button class="tablinks" onclick="openCity(event, 'Aulas_dois')">Aulas</button>
+					</div>
+
+					<!-- Tab content -->
+					<div id="Mensagem_dois" class="tabcontent">
+						<h3>London</h3>
+						<p>London is the capital city of England.</p>
+					</div>
+
+					<div id="Palestras_dois" class="tabcontent">
+						<h3>Paris</h3>
+						<p>Paris is the capital of France.</p>
+					</div>
+
+					<div id="Aulas_dois" class="tabcontent">
+						<h3>Tokyo</h3>
+						<p>Tokyo is the capital of Japan.</p>
+					</div>
+					
+					<p>&nbsp;</p>
+					
+
+					<hr class="conteudo" />
+					
+					<h1>ESCRITÓRIO</h1>
+					<p>&nbsp;</p>
+					
+					<div id="escritorio">
+						<p style="text-align:center; color:white">Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
+						Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live.
+						It is altogether fitting and proper that we should do this.But, in a larger sense, we can not dedicate -- we can not consecrate -- we can not hallow -- this ground. The brave men, living and dead, who struggled here, have consecrated it,
+						far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather,
+						to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us -- that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion --
+						that we here highly resolve that these dead shall not have died in vain -- that this nation, under God, shall have a new birth of freedom -- and that government of the people, by the people, for the people, shall not perish from the earth.
+						</p>
+					</div>
+					
+					<br>
+					
+					<a href="images/escritorio_um.jpg" rel="lightbox"><img src="images/escritorio_um.jpg" class="pagina_equipe" style="width:150px; height:120px; margin:2.3%" /></a>
+					<a href="images/escritorio_dois.jpg" rel="lightbox"><img src="images/escritorio_dois.jpg" class="pagina_equipe" style="width:150px; height:120px; margin:2.3%" /></a>
+					<a href="images/escritorio_tres.jpg" rel="lightbox"><img src="images/escritorio_tres.jpg" class="pagina_equipe" style="width:150px; height:120px; margin:2.3%" /></a>
+					<a href="images/escritorio_quatro.jpg" rel="lightbox"><img src="images/escritorio_quatro.jpg" class="pagina_equipe" style="width:150px; height:120px; margin:2.3%" /></a>
+					<a href="images/escritorio_cinco.png" rel="lightbox"><img src="images/escritorio_cinco.png" class="pagina_equipe" style="width:150px; height:120px; margin:2.3%" /></a>
+					<a href="images/escritorio_seis.jpg" rel="lightbox"><img src="images/escritorio_seis.jpg" class="pagina_equipe" style="width:150px; height:120px; margin:2.3%" /></a>
+
+				</div>
+				
+			</div>
+			
+			<!-- Footer -->
+			<footer id="end">
+				<div id="end_um">
+					<div class="linha">
+						<div class="coluna">
+							<h4 style="color:rgb(115,115,115)">FALE CONOSCO</h4>
+						</div>
+						
+						<div class="coluna">
+							<h4 style="color:rgb(115,115,115)">ENDEREÇO</h4>
+						</div>
+						
+						<div class="coluna">
+							<h4 style="color:rgb(115,115,115)">ONLINE</h4>
+						</div>
+					</div>
+					
+					<hr class="fot" />
+					
+					<div class="linha">
+						<div class="coluna">
+							
+							<p style="padding-left:60px" align="left">Fale conosco rapidamente sobre sua questão à ser resolvida</p>
+							<img id="qrcode" src="images/main/qr_code_whatsapp.png" alt="qrcode" title="qrcode" />
+							
+						</div>
+						
+						<div class="coluna">
+							<iframe 
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.0404454590266!2d-43.942935385555046!3d-19.92270038660782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699e3b6414593%3A0xcde2624afb4aa1a7!2sR.%20S%C3%A3o%20Paulo%2C%201031%20-%20Centro%2C%20Belo%20Horizonte%20-%20MG%2C%2030170-133!5e0!3m2!1sen!2sbr!4v1579902461513!5m2!1sen!2sbr"
+								width="400"
+								height="250"
+								frameborder="0"
+								style="border-style:solid; border-radius:20px; border-color:rgb(0,0,0,0); border-width:5px"
+								allowfullscreen="">
+							</iframe>
+						</div>
+						
+						<div class="coluna">
+							<a href="https://www.facebook.com/"><img src="images/main/facebook.png" class="icones" alt="Facebook" title="Facebook" style="border-color:rgb(39,64,139)" /></a>
+							<a href="https://www.google.com/"><img src="images/main/instagram.png" class="icones" alt="Instagram" title="Instagram" style="border-color:rgb(54,100,139)" /></a>
+							<a href="https://www.google.com/"><img src="images/main/twitter.png" class="icones" alt="Twitter" title="Twitter" style="border-color:rgb(135,206,255)" /></a>
+							<a href="https://www.google.com/"><img src="images/main/youtube.png" class="icones" alt="You Tube" title="You Tube" style="border-color:rgb(255,0,0)" /></a>
+						</div>
+					</div>
+					
+					<hr class="fot_dois" />
+					
+					<div id="nav" class="primeira_parte">
+						<button class="button_footer button_footer_topicos"><a href="escritorio_e_equipe.html" style="color: rgb(100,100,100)" class="primeiros_topicos">ESCRITÓRIO E EQUIPE</a></button>
+						<button class="button_footer button_footer_topicos"><a href="https://www.facebook.com/" style="color: rgb(100,100,100)" class="primeiros_topicos">CONCILIAÇÃO, MEDIAÇÃO E ACORDOS</a></button>
+						<button class="button_footer button_footer_topicos"><a href="https://www.nature.com/" style="color: rgb(100,100,100)" class="primeiros_topicos">PARA VOCÊ</a></button>
+						<button class="button_footer button_footer_topicos"><a href="https://www.scientificamerican.com/" style="color: rgb(100,100,100)" class="primeiros_topicos">PARA SUA EMPRESA</a></button>
+						<button class="button_footer button_footer_topicos"><a href="https://www.scientificamerican.com/" style="color: rgb(100,100,100)" class="primeiros_topicos">PARA ADVOGADOS</a></button>
+						<button class="button_footer button_footer_topicos"><a href="https://www.scientificamerican.com/" style="color: rgb(100,100,100)" class="primeiros_topicos">SAC</a></button>
+					</div>
+				</div>
+				<hr class="fot_dois" />
+				<div id="end_dois">
+					<p style="text-align:left">&copy; Copyright 2020</p>
+				</div>
+			</footer>
+		</div>
+		<script>
+			AOS.init({
+				duration: 2200,
+			});
+		</script>
+		
+		<script type="text/javascript">
+			window.addEventListener("load", function(){
+				const loader = document.querySelector(".loader");
+				loader.className += " hidden";
+			});
+		</script>
+		
+		<script type="text/javascript">
+			function openCity(evt, cityName) {
+			  // Declare all variables
+			  var i, tabcontent, tablinks;
+
+			  // Get all elements with class="tabcontent" and hide them
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			  }
+
+			  // Get all elements with class="tablinks" and remove the class "active"
+			  tablinks = document.getElementsByClassName("tablinks");
+			  for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+
+			  // Show the current tab, and add an "active" class to the button that opened the tab
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			} 
+		</script>
+	</body>
+ </html>

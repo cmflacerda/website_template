@@ -1,0 +1,172 @@
+body{
+	background-color:rgb(255,250,250,0);
+	overflow:auto;
+}
+#sub_logo{
+	overflow: auto;
+	width:20%;
+	float:left;
+	margin:1%
+	border-style: solid;
+	border-color:white;
+}
+
+#topicos_head{
+	overflow: auto;
+	width:80%;
+	float:left;
+	margin:1%
+	text-align:left;
+	padding-top:25px;
+				
+}
+			
+#sala{
+	height:1200px;
+}
+			
+.button_escritorio_equipe {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+			
+.button_primeiros_topicos{
+	background-color: rgb(54,54,54,0); 
+	color: rgb(181,181,181); 
+	border: 2px solid rgb(54,54,54,0);
+	border-radius:30px;
+}
+
+.button_primeiros_topicos:hover {
+	background-color: rgb(105,105,105);
+	color: white;
+}
+			
+/*hide the inputs/checkmarks and submenu*/
+input, ul.submenu {
+	display: none;
+	width:70%;
+	padding-left:40px;
+	text-align:center;
+}
+
+/*position the label*/
+label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+
+/*show the submenu when input is checked*/
+input:checked~ul.submenu {
+	display: block;
+}
+			
+.menu{
+	width:80%;
+	text-align:center;
+	display: inline-block; 
+	margin: 0 auto;
+	padding: 3px;
+}
+			
+			
+			
+/*hide the inputs/checkmarks and submenu*/
+	#one, #one_ul{
+	display: none;
+}
+
+/*show the submenu when input is checked*/
+	#one:checked~#one_ul{
+	display: block;
+}
+			
+/*hide the inputs/checkmarks and submenu*/
+	#two, #two_ul{
+	display: none;
+}
+
+/*show the submenu when input is checked*/
+	#two:checked~#two_ul{
+	display: block;
+}
+			
+/*hide the inputs/checkmarks and submenu*/
+	#three, #three_ul{
+	display: none;
+}
+
+/*show the submenu when input is checked*/
+	#three:checked~#three_ul{
+	display: block;
+}
+			
+/*hide the inputs/checkmarks and submenu*/
+	#four, #four_ul{
+	display: none;
+}
+
+/*show the submenu when input is checked*/
+	#four:checked~#four_ul{
+	display: block;
+}
+			
+/*hide the inputs/checkmarks and submenu*/
+	#five, #five_ul{
+	display: none;
+}
+
+/*show the submenu when input is checked*/
+	#five:checked~#five_ul{
+	display: block;
+}
+			
+/*hide the inputs/checkmarks and submenu*/
+	#six, #six_ul{
+	display: none;
+}
+
+/*show the submenu when input is checked*/
+	#six:checked~#six_ul{
+	display: block;
+}
+			
+/*hide the inputs/checkmarks and submenu*/
+	#seven, #seven_ul{
+	display: none;
+}
+
+/*show the submenu when input is checked*/
+	#seven:checked~#seven_ul{
+	display: block;
+}
+			
+/*hide the inputs/checkmarks and submenu*/
+	#eight, #eight_ul{
+	display: none;
+}
+
+/*show the submenu when input is checked*/
+	#eight:checked~#eight_ul{
+	display: block;
+}
+			
+/*hide the inputs/checkmarks and submenu*/
+	#nine, #nine_ul{
+	display: none;
+}
+
+/*show the submenu when input is checked*/
+	#nine:checked~#nine_ul{
+	display: block;
+}

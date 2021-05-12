@@ -1,0 +1,235 @@
+ <!DOCTYPE html>
+ <html>
+	<header>
+		<title>GRL - Página Oficial</title>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ovo&display=swap" rel="stylesheet">
+		<link href="first_css.css" type="text/css" rel="stylesheet" />
+		<link href="para_advogados_empresas_voce.css" type="text/css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</header>
+ 
+	<body>
+		<style type="text/css">
+		
+			body{
+				background-color:rgb(255,250,250,0);
+			}
+
+			#sub_logo{
+				overflow: auto;
+				width:20%;
+				float:left;
+				margin:1%
+				border-style: solid;
+				border-color:white;
+			}
+			
+			
+			
+			#topicos_head{
+				overflow: auto;
+				width:80%;
+				float:left;
+				margin:1%
+				text-align:left;
+				padding-top:25px;
+				
+			}
+			
+			.button_escritorio_equipe {
+				background-color: #4CAF50; /* Green */
+				border: none;
+				color: white;
+				padding: 8px 16px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 12px;
+				margin: 4px 2px;
+				transition-duration: 0.4s;
+				cursor: pointer;
+			}
+			
+			.button_primeiros_topicos{
+				background-color: rgb(54,54,54,0); 
+				color: rgb(181,181,181); 
+				border: 2px solid rgb(54,54,54,0);
+				border-radius:30px;
+			}
+
+			.button_primeiros_topicos:hover {
+				background-color: rgb(105,105,105);
+				color: white;
+			}
+			
+			input{
+				display:initial;
+				width:30%;
+				text-align:left;
+			}
+			
+			#enviar, #apagar{
+				width:100px;
+				text-align:left;
+				padding:0 auto;
+			}
+			
+			
+			
+		</style>
+		<div id="page">
+		
+			<!-- Loader -->
+			<div class="loader">
+				<img src="images/main/loading.gif" alt="Loading..." />
+			</div>
+			<!-- Header -->
+			<div id="header" class="linha">
+			
+				<div id="sub_logo">
+					<a href="index_um.html"><img id="logo_header" src="images/main/logo_final_escritorio_equipe.png" alt="logo" title="logo" /></a>
+				</div>
+				
+				<div id="topicos_head">
+					<button class="button_escritorio_equipe button_primeiros_topicos"><a href="escritorio_e_equipe.html" style="color: rgb(181,181,181)" class="primeiros_topicos">ESCRITÓRIO E EQUIPE</a></button>
+					<button class="button_escritorio_equipe button_primeiros_topicos"><a href="conciliacao_mediacao_e_acordos.html" style="color: rgb(181,181,181)" class="primeiros_topicos">CONCILIAÇÃO, MEDIAÇÃO E ACORDOS</a></button>
+					<button class="button_escritorio_equipe button_primeiros_topicos"><a href="para_voce.html" style="color: rgb(181,181,181)" class="primeiros_topicos">PARA VOCÊ</a></button>
+					<button class="button_escritorio_equipe button_primeiros_topicos"><a href="para_sua_empresa.html" style="color: rgb(181,181,181)" class="primeiros_topicos">PARA SUA EMPRESA</a></button>
+					<button class="button_escritorio_equipe button_primeiros_topicos"><a href="para_advogados.html" style="color: rgb(181,181,181)" class="primeiros_topicos">PARA ADVOGADOS</a></button>
+					<button class="button_escritorio_equipe button_primeiros_topicos"><a href="sac.html" style="color: rgb(181,181,181)" class="primeiros_topicos">SAC</a></button>
+				</div>
+			</div>
+			
+			
+			<!-- Content -->
+			<div id="content" class="linha">
+				
+				<!-- Slider -->
+				<!--<div id="slider">
+					<div id="sliderbox">
+						<img src="images/main/ret_red.png" class="slider" />
+						<img src="images/main/ret_red_blue.png" class="slider" />
+						<img src="images/main/ret_red_green.png" class="slider" />
+						<img src="images/main/ret_red_roxo.png" class="slider" />
+						
+					</div>
+				</div>-->
+				
+				
+				<!-- Office history, Personal informations, Useful links  -->
+				<div id="sala">
+					<div id="introducao">
+						<h1 id="titulo_introducao">Fale Conosco</h1>
+						<p>Inserir aqui um texto explicando a parte abaixo desse site na qual os clientes poderão enviar mensagem para o email do escritório.</p>
+					</div>
+					
+					<hr class="conteudo" />
+					
+					<br>
+					<p>&nbsp;</p>
+					
+					
+					<div id="email">
+						<form action="MAILTO:michel.lacerda94@gmail.com" method="post" enctype="text/plain">
+							<h4>Nome:</h4>
+							<input type="text" name="user" />
+							
+							<h4>Email:</h4>
+							<input type="email" name="mail" />
+							
+							<h4>Comentário:</h4>
+							<textarea rows="20" cols="100"></textarea><br>
+							<input id="enviar" type="submit" value="Enviar" />
+							<input id="apagar" type="reset" value="Apagar" />
+						</form>
+					</div>
+				</div>
+				
+				
+				
+				
+				<p>&nbsp;</p>
+				<br>
+				
+				
+			</div>
+			
+			<!-- Footer -->
+			<footer id="end">
+				<div id="end_um">
+					<div class="linha">
+						<div class="coluna">
+							<h4 style="color:rgb(115,115,115)">FALE CONOSCO</h4>
+						</div>
+						
+						<div class="coluna">
+							<h4 style="color:rgb(115,115,115)">ENDEREÇO</h4>
+						</div>
+						
+						<div class="coluna">
+							<h4 style="color:rgb(115,115,115)">ONLINE</h4>
+						</div>
+					</div>
+					
+					<hr class="fot" />
+					
+					<div class="linha">
+						<div class="coluna">
+							
+							<p style="padding-left:60px" align="left">Fale conosco rapidamente sobre sua questão à ser resolvida</p>
+							<img id="qrcode" src="images/main/qr_code_whatsapp.png" alt="qrcode" title="qrcode" />
+							
+						</div>
+						
+						<div class="coluna">
+							<iframe 
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.0404454590266!2d-43.942935385555046!3d-19.92270038660782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699e3b6414593%3A0xcde2624afb4aa1a7!2sR.%20S%C3%A3o%20Paulo%2C%201031%20-%20Centro%2C%20Belo%20Horizonte%20-%20MG%2C%2030170-133!5e0!3m2!1sen!2sbr!4v1579902461513!5m2!1sen!2sbr"
+								width="400"
+								height="250"
+								frameborder="0"
+								style="border-style:solid; border-radius:20px; border-color:rgb(0,0,0,0); border-width:5px"
+								allowfullscreen="">
+							</iframe>
+						</div>
+						
+						<div class="coluna">
+							<a href="https://www.facebook.com/"><img src="images/main/facebook.png" class="icones" alt="Facebook" title="Facebook" style="border-color:rgb(39,64,139)" /></a>
+							<a href="https://www.google.com/"><img src="images/main/instagram.png" class="icones" alt="Instagram" title="Instagram" style="border-color:rgb(54,100,139)" /></a>
+							<a href="https://www.google.com/"><img src="images/main/twitter.png" class="icones" alt="Twitter" title="Twitter" style="border-color:rgb(135,206,255)" /></a>
+							<a href="https://www.google.com/"><img src="images/main/youtube.png" class="icones" alt="You Tube" title="You Tube" style="border-color:rgb(255,0,0)" /></a>
+						</div>
+					</div>
+					
+					<hr class="fot_dois" />
+					
+					<div id="nav" class="primeira_parte">
+						<button class="button_footer button_footer_topicos"><a href="escritorio_e_equipe.html" style="color: rgb(100,100,100)" class="primeiros_topicos">ESCRITÓRIO E EQUIPE</a></button>
+						<button class="button_footer button_footer_topicos"><a href="https://www.facebook.com/" style="color: rgb(100,100,100)" class="primeiros_topicos">CONCILIAÇÃO, MEDIAÇÃO E ACORDOS</a></button>
+						<button class="button_footer button_footer_topicos"><a href="https://www.nature.com/" style="color: rgb(100,100,100)" class="primeiros_topicos">PARA VOCÊ</a></button>
+						<button class="button_footer button_footer_topicos"><a href="https://www.scientificamerican.com/" style="color: rgb(100,100,100)" class="primeiros_topicos">PARA SUA EMPRESA</a></button>
+						<button class="button_footer button_footer_topicos"><a href="https://www.scientificamerican.com/" style="color: rgb(100,100,100)" class="primeiros_topicos">PARA ADVOGADOS</a></button>
+						<button class="button_footer button_footer_topicos"><a href="https://www.scientificamerican.com/" style="color: rgb(100,100,100)" class="primeiros_topicos">SAC</a></button>
+					</div>
+				</div>
+				<hr class="fot_dois" />
+				<div id="end_dois">
+					<p style="text-align:left">&copy; Copyright 2020</p>
+				</div>
+			</footer>
+		</div>
+		<script>
+			AOS.init({
+				duration: 2200,
+			});
+		</script>
+		
+		<script type="text/javascript">
+			window.addEventListener("load", function(){
+				const loader = document.querySelector(".loader");
+				loader.className += " hidden";
+			});
+		</script>
+	</body>
+ </html>
